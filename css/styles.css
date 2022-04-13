@@ -1,0 +1,353 @@
+/* importeer het Colendra font uit onze eigen map */
+@font-face {
+  font-family: 'Colendra';
+  src: url('../assets/ColendraRegular.otf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* importeer ook de bold gedrukte versie van het Colendra font
+   uit onze eigen map */
+@font-face {
+  font-family: 'Colendra';
+  src: url('../assets/ColendraBold.otf');
+  font-style: normal;
+  font-weight: 700; /* bold */
+}
+
+/* CSS reset */
+*, html {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+/* stel een plaatje van de stippen uit de ISGA guide in als achtergrond
+   en herhaal dit patroon */
+body {
+	background-image: url('../images/dot_background.png');
+	background-repeat: repeat;
+	margin: 25px 10% 25px 10%;
+}
+
+/* onderstaande styles voor de <h1>, <h2>, <h3> en <p> tags geven een voorbeeld
+   hoe je de geimporteerde fonts kunt gebruiken.
+   Op je eigen website mag je natuurlijk andere lettertypes, groottes, en
+   kleuren, etc. voor deze tags gebruiken. */
+   
+h1 {
+	font-family: 'Colendra', sans-serif;   
+	font-size: 40px;
+	line-height: 1.8em;
+	color: #4A8A85;
+	font-weight: 700; /* bold */
+}
+
+h2 {
+	font-family: 'Colendra', sans-serif;   
+	font-size: 25px;
+	line-height: 0.8em;
+	color: #1D1D1B;
+	font-weight: 300;
+	margin: 10px 0;
+	font-style: italic;
+}
+
+h3 {
+	font-family: 'Colendra', sans-serif;   
+	font-size: 22px;
+	line-height: 0.8em;
+	font-weight: 200;
+}
+
+p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 15px;
+}
+
+/* dit is het gedeelte met header styling */
+header {
+	height: 50px;
+}
+
+header a {
+	font-size: 30px;
+	color: grey;
+}
+
+header form {
+	float: right;
+}
+
+header select {
+	border-radius: 15px;
+	padding: 5px;
+}
+
+header input {
+	border: 1px solid;
+	border-radius: 15px;
+	padding: 5px;
+	margin-bottom: 10px;
+	background-color: #30375A;
+	color: white;
+}
+
+/* dit is het gedeelte met main styling */
+main#home {
+	height: 600px;
+}
+
+/* styling voor de polaroid effect */
+main#home section figure:nth-child(3){
+	width: 100%;
+	background-color: white;
+	border: 5px solid white;
+	border-width:6px 6px 12px 6px;  
+	box-shadow:1px 1px 5px #333;
+	margin-bottom: 10px;
+}
+
+main#home section figure:nth-child(3) img {
+	width: 100%;
+}
+
+/* styling voor de polaroid effect */
+main#translator figure:nth-child(3){
+	width: 100%;
+	background-color: white;
+	border: 5px solid white;
+	border-width:6px 6px 12px 6px;  
+	box-shadow:1px 1px 5px #333;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+main#translator figure:nth-child(3) img {
+	width: 100%;
+}
+
+main#translator figure figcaption a {
+	width: 50%;
+	border: 1px solid;
+	border-radius: 15px;
+	padding: 10px;
+	margin-bottom: 15px;
+	text-decoration: none;
+	color: white;
+	background-color: teal;
+
+}
+
+main#subject figure img{
+	width: 100%;
+	background-color: white;
+	border: 5px solid white;
+	border-width:6px 6px 12px 6px;  
+	box-shadow:1px 1px 5px #333;
+	margin-bottom: 10px;
+}
+
+main#search {
+	height: 700px;
+}
+
+main#search p {
+	margin: 10px 5px;
+}
+
+main#search section input:nth-child(1) {
+	width: 77%;
+	border: 1px solid;
+	border-radius: 15px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+main#search section input:nth-child(2) {
+	border: 1px solid;
+	border-radius: 15px;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #30375A;
+	color: white;
+}
+
+main#search section figure {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+main#search section figure a img{
+	max-width: 150px;
+	background-color: white;
+	border: 5px solid white;
+	border-width:6px 6px 12px 6px;  
+	box-shadow:1px 1px 5px #333;
+	margin: 5px;
+}
+
+main#results ul li{
+	list-style: none;
+}
+
+main#results ul li a {
+	text-decoration: none;
+}
+
+main#settings section a {
+	position: absolute;
+	bottom: 50%;
+	left: 15%; /*footer heeft nu een center positie. 56.250 links en rechts. */
+	background-color: #30375A;
+	width: 70%;
+	border-radius: 30px;
+	padding: 10px;
+	border: 1px solid grey;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+
+}
+
+main#login section {
+	border: 1px solid black;
+	border-radius: 15px;
+	padding: 10px;
+	height: 400px;
+	background-color: white;
+	/* margin-top: 20px; */
+	z-index: 5;
+}
+
+main#login img {
+	width: 100%;
+}
+
+main#login section fieldset {
+	/* Dit is alleen om de border van de fieldset weg te halen. */
+	border: 0; 
+}
+
+main#login section fieldset input {
+	width: 80%;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+main#login section h1 {
+	text-align: center;
+}
+
+main#login section p {
+	text-align: center;
+}
+
+
+main#login section > a:nth-child(3) p{
+	border-radius: 30px;
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid grey;
+	text-align: center;
+	text-decoration: none;
+	background-color: #30375A;
+	color: white;
+}
+
+main#register img {
+	width: 100%;
+}
+
+main#register section {
+	border: 1px solid black;
+	border-radius: 15px;
+	padding: 10px;
+	height: 400px;
+	background-color: white;
+	/* margin-top: 100px; */
+}
+
+main#register section fieldset {
+	border: 0;
+}
+
+main#register section fieldset input {
+	width: 80%;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+main#register section h1 {
+	text-align: center;
+}
+
+main#register section p {
+	text-align: center;
+}
+
+main#register select {
+	display: flex;
+	justify-content: center;
+}
+
+main#register section > a:nth-child(4) p{
+	border-radius: 30px;
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid grey;
+	text-align: center;
+	text-decoration: none;
+	background-color: #30375A;
+	color: white;
+}
+
+main figcaption {
+	text-align: center;
+	font-family: 'Colendra', sans-serif;  
+	margin-top: 10px;
+}
+
+/* Footer image */
+main > figure:last-child img{
+	width: 100%;
+	position: fixed;
+	opacity: 0.2;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+
+}
+
+/* dit is het gedeelte met de footer styling */
+footer {
+	position: fixed;
+	bottom: 10px;
+	left: 15%; /*footer heeft nu een center positie. 56.250 links en rechts. */
+	background-color: white;
+	width: 75%;
+	border-radius: 30px;
+	padding: 5px 0;
+	border: 1px solid grey;
+}
+
+/* dit is het gedeelte met de nav styling */
+nav ul{
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 5px;
+}
+
+nav ul li {
+	list-style: none;
+}

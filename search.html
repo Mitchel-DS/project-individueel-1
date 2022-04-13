@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Search</title>
+	<!-- Hier halen we onze eigen stylesheet op -->
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- Hier halen we een tweede stylesheet op. Deze komt van Google Fonts en zorgt
+		dat een aantal varianten van het font Josefin Sans wordt geimporteerd.
+		Josefin Sans is een gratis alternatief voor het font Brandon Grotesque. -->
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<a href="index.html"><img src="images/svg/back.svg" alt=""></a>
+		<form action="searchtranslated.html">
+			<select name="languages">
+				<option value="english">English</option>
+				<option value="dutch">Dutch</option>
+				<option value="indo">Indonesian</option>
+				<option value="german">German</option>
+			</select>
+			<input type="submit" value="GO">
+		</form>
+	</header>
+	<main id="search">
+		<section>
+			<h1>Search</h1>
+			<form action="searchresults.html">
+				<input type="text" placeholder="Search.. ">
+				<input type="submit" value="Search">
+			</form>
+			<h2>Suggestions:</h2>
+			<figure>
+				<a href="subjectmarket.html"><img src="images/market.jpg" alt=""></a>
+				<a href="subjectbank.html"><img src="images/bank.jpg" alt=""></a>
+			</figure>
+			<article>
+				<h3>Table of contents </h3>
+				<figure>
+					<a href="subjectfood.html"><img src="images/suggestion.jpg" alt=""></a>
+					<p>There are many different restaurants in Amsterdam.<a href="subjectfood.html">Read more</a></p>
+				</figure>
+				<figure>
+					<a href="subjectbank.html"><img src="images/bank.jpg" alt=""></a>
+					<p>You might wish to open a Dutch bank account during your stay.<a href="subjectbank.html">Read more</a></p>
+					
+				</figure>
+
+			</article>
+		</section>
+		<figure>
+			<img src="images/steden.png" alt="">
+		</figure>
+	</main>
+	<footer>
+		<nav>
+			<ul>
+				<li><a href="index.html"><img src="images/svg/home.svg" alt=""></a></li>
+				<li><a href="search.html"><img src="images/svg/searchactive.svg" alt=""></a></li>
+				<li><a href="translator.html"><img src="images/svg/translator.svg" alt=""></a></li>
+				<li><a href="settings.html"><img src="images/svg/settings.svg" alt=""></a></li>
+				<li><a href="login.html"><img src="images/svg/login.svg" alt=""></a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+
+</html>
